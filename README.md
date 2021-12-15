@@ -1,1 +1,0 @@
-# tanuarta.github.io
