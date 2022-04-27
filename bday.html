@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <style type="text/css">
+      html  {
+        background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-antique-white-solid-color-background.jpg');
+        background-size:cover;
+      }
+
+      body  {
+        font-family: "Dosis";
+        padding: 0 5%;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .video  {
+        flex: 1;
+      }
+
+      .message {
+        flex: 3;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .message p  {
+        font-size: 30px;
+        font-weight: 400;
+        color: rgb(172,145,125);
+      }
+
+      .message h1 {
+        font-size: 100px;
+        font-weight: 200;
+        color: rgb(172,145,125);
+      }
+
+      .message #num {
+        font-size: 150px;
+      }
+
+      .row {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 32.33%;
+        padding: 10px 4px;
+        max-width: 33.33%;
+      }
+      
+      .column img {
+        min-height: 0;
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      #love:hover {
+        cursor: pointer;
+      }
+
+      .vid1  {
+        width: 200px;
+        height: 300px;
+        padding-left: 5%;
+      }
+
+      .vid2 {
+        width: 200px;
+        height: 300px;
+        float: right;
+        padding-right: 5%;
+      }
+      
+
+
+
+
+
+      @keyframes heartfade {
+        0% {
+          opacity : 1;
+        }
+        50% {
+          opacity : 0;
+        }
+      }
+      .heart {
+        z-index : 999;
+        animation : heartfade 6s linear;
+        position : absolute; 
+      }
+      .heart:before,
+      .heart:after {
+        content : "";
+        background-color : #fc2a62;
+        position : absolute;
+        height : 30px;
+        width : 45px;
+        border-radius : 15px 0px 0px 15px;
+      }
+
+      .heart:before {
+        transform : rotate(45deg);
+      }
+
+      .heart:after {
+        left : 10.5px;
+        transform : rotate(135deg);
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="top">
+      <div class="video">
+        <img onload="confetti({particleCount: 150, spread: 180});" class="vid1" src="vid/Snapchat-1504429429.gif" />
+      </div>
+      <div class="message">
+        <h1>Rissa's <span id="num">21st</span> Birthday</h1>
+      </div>
+      <div class="video">
+        <img class="vid2" src="vid/Snapchat-1082832054.gif" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="message">
+        <p>
+          Happy Birthday Bubba!! 🥳🥳
+          You're 21 now! That means you can finally drink in America 😳. I wonder if by this time we'll be able to go out, and if
+          that's the case maybe I'll see you later today even though it's a Saturday; I'll come up with an excuse to see you maybe
+          since we've been in lockdown for so long. But even if I don't see you today, don't worry! I'm ready to spoil you for the
+          whole day. I'll be your entertainment, your personal slave and even your token kpop boyfriend anything you want really.
+        </p>
+        <p>
+          You know, since you're 21 and we've been together for almost 5 years now, that means that I've been your boyfriend for
+          almost a quarter of your life (and mine) that's pretty crazy huh? I'm so lucky to be able to have someone like you who
+          can always make me laugh, dumb jokes become funny coming from you. You make me so happy from just being yourself and the
+          best part is you accept me for just who I am. I'm so comfortable around you, you've seen my good sides and my bad sides
+          and you love me for all of it.
+        </p>
+        <p>
+          Sometimes it's hard for me to understand when you talk about your insecurities. It hurts me to see you experience these
+          moments of low self-esteem because to me you're so amazing. I love your art, the drawings you do of us remind me of how
+          blessed I am that you're my girlfriend. You compare yourself too often with people in social media, comparing their best
+          to your worst. I see improvement in your work, and I see the care that you put into it. I see someone who puts their
+          best efforts to create something they're proud of, someone who's passionate about their art and won't settle for nothing
+          less but perfection. An artist who knows their skill and is disappointed when it's not reflected in her work. I hope
+          that one day you'll see how special you are and use the imperfections in your work as a motivation to improve, instead
+          of comparing yourself to others to doubt your ability in improving.
+        </p>
+        <p>
+          This letter took longer to write because I kept crying in the middle of it. I always cry a lot when I think about us.
+          Thinking about us together in highschool, thinking about the dates that we've been in, it really, really reminds me of
+          how special you are to me. Not seeing you for a while has really made me take you for granted. I hope today you can be
+          reminded of the times where we used to message each other till we sleep on facebook. The days where we would sleep while
+          calling each other. The days where we were less busy and had more time for each other. The days where I would send you
+          memes I found on google through facebook to make you laugh. The days where we would play stardew valley for hours.
+          Because you deserve it after all this stress from school! Mmmmmmmmwah
+        </p>
+        <p>
+          Hopefully you'll see all this you're not in a call with me cause I'll be too embarrassed hehe.
+          
+          I love you.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="pic/long1.jpg" />
+        <img style="height: 39.2vw" src="pic/med.jpg" />
+        <img src="pic/wide.jpg" />
+        
+      </div>
+    
+      <div class="column">
+        <img src="pic/wide2.jpg" />
+        <img src="pic/med2.jpg" />
+        <img style="height: 64.9vw" src="pic/long2.jpg" />
+        
+      </div>
+    
+      <div class="column">
+        <img src="pic/long.jpg" />
+        <img style="height: 17.6vw" src="pic/wide3.jpg" />
+        <img src="pic/med3.jpg" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="message">
+        <h1 onclick="generateHeart(900.390625, 3700.828125, null, null, 1);"id="love">I love you</h1>
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+    var lol = 30;
+    var end = Date.now() + lol;
+
+    (function frame() {
+      // launch a few confetti from the left edge
+      confetti({
+        particleCount: 7,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      // and launch a few from the right edge
+      confetti({
+        particleCount: 7,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+
+      // keep going until we are out of time
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    }());
+    
+    var brd = document.createElement("DIV");
+    document.body.insertBefore(brd, document.getElementById("board"));
+    const duration = 3000;
+    const speed = 0.5;
+    const cursorXOffset = 0;
+    const cursorYOffset = -5;
+    var hearts = [];
+
+    function generateHeart(x, y, xBound, xStart, scale) {
+      var heart = document.createElement("DIV");
+      heart.setAttribute('class', 'heart');
+      brd.appendChild(heart);
+      heart.time = duration;
+      heart.x = x;
+      heart.y = y;
+      heart.bound = xBound;
+      heart.direction = xStart;
+      heart.style.left = heart.x + "px";
+      heart.style.top = heart.y + "px";
+      heart.scale = scale;
+      heart.style.transform = "scale(" + scale + "," + scale + ")";
+      if (hearts == null)
+        hearts = [];
+      hearts.push(heart);
+      return heart;
+    };
+
+    var before = Date.now();
+    var id = setInterval(frame, 5);
+    function frame() {
+      var current = Date.now();
+      var deltaTime = current - before;
+      before = current;
+      for (i in hearts) {
+        var heart = hearts[i];
+        heart.time -= deltaTime;
+        if (heart.time > 0) {
+          heart.y -= speed;
+          heart.style.top = heart.y + "px";
+          heart.style.left = heart.x + heart.direction * heart.bound * Math.sin(heart.y * heart.scale / 30) + "px";
+        }
+        else {
+          heart.parentNode.removeChild(heart);
+          hearts.splice(i, 1);
+        }
+      }
+    }
+
+  </script>
+</html>
