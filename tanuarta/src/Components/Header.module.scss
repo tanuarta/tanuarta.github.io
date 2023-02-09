@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
+.main {
+  width: 100%;
+}
+
 .topbox {
   display: flex;
   justify-content: space-between;
@@ -13,7 +17,7 @@
   color: black;
   font-weight: 900;
   font-family: 'Inter';
-  text-shadow: 0px 40px 30px darkgray;
+  text-shadow: 0px 40px 30px #C2C2C2;
   
   /* disable highlighting */
   -webkit-user-select: none;
@@ -26,9 +30,9 @@
 
 .burger {
   display: inline-block;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
+  background-color: transparent;
 }
 
 .line1, .line2, .line3 {
@@ -37,11 +41,22 @@
   margin: 8px 0;
   background-color: black;
   transition: 0.4s;
+  z-index: 99;
+}
+
+.fill {
+  width: 45px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -99;
 }
 
 /* Rotate first bar */
 .change .line1 {
   transform: translate(0, 13px) rotate(-45deg);
+  background-color: white;
 }
 
 /* Fade out the second bar */
@@ -52,5 +67,5 @@
 /* Rotate last bar */
 .change .line3 {
   transform: translate(0, -13px) rotate(45deg);
+  background-color: white;
 }
-

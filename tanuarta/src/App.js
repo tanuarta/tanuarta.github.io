@@ -10,7 +10,8 @@ function App() {
     x: 0,
     y: 0,
   })
-  //console.log(mousePos)
+  
+  const [cursorMode, setCursorMode] = useState(false)
 
   useEffect(() => {
     const mouseMove = e => {
@@ -29,25 +30,14 @@ function App() {
   
   }, []);
 
-  
-
   return (<>
-    <Home />
-    <Cursor 
-      mousePos={mousePos}
+    <Home 
+      setCursorMode={setCursorMode}
     />
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <Cursor
+      mousePos={mousePos}
+      cursorMode={cursorMode}
+    />
     
     
     

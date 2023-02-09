@@ -1,0 +1,41 @@
+.box {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 1.5%;
+}
+
+.hidden { 
+  display: none;
+}
+
+.menuText {
+  color: white;
+  background-color: black;
+  font-size: 4vw;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.text {
+  font-size: 4vw;
+  color: white;
+  font-weight: 900;
+  font-family: 'Inter';
+  background-color: black;
+  
+  /* disable highlighting */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.main {
+  background-color: black;  
+  display: flex;
+  flex-direction: column;
+
+}

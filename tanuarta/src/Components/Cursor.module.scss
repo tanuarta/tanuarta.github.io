@@ -1,3 +1,4 @@
+
 .outer {
   border-radius: 50%;
   width: 40px;
@@ -9,12 +10,20 @@
   background-color: transparent;
   border: 2px solid rgba(0, 0, 0, 1);
   pointer-events: none;
+  filter: invert(1);
+  mix-blend-mode: difference;
+  transition: scale 0.5s, background-color 0.5s;
 }
 
-.dot {
-  border-radius: 50%;
-  width: 2px;
-  height: 2px;
-  background-color: white;
-  display: none;
+
+.change .outer {
+  scale: 30%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  filter: none;
+  mix-blend-mode: normal;
+  background-color: blue;
 }
