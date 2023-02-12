@@ -6,6 +6,7 @@
   height: 100%;
   width: 100%;
   padding-left: 1.5%;
+  z-index: -99;
 }
 
 .hidden { 
@@ -17,7 +18,7 @@
   background-color: black;
   font-size: 4vw;
   padding-left: 10%;
-  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .text {
@@ -37,5 +38,5 @@
   background-color: black;  
   display: flex;
   flex-direction: column;
-
+  padding-top: 10%;
 }
