@@ -13,7 +13,6 @@ const Header = ({ setCursorMode }) =>  {
   
   const mouseLeave = () => {
     setCursorMode(false);
-  
   }
   
   
@@ -25,6 +24,7 @@ const Header = ({ setCursorMode }) =>  {
   <div>
     <HambugerMenu 
       menuShown={menuShown}
+      setCursorMode={setCursorMode}
     />
     
     <div className={styles.topbox}>

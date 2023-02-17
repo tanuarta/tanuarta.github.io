@@ -17,8 +17,13 @@
   color: white;
   background-color: black;
   font-size: 4vw;
-  padding-left: 10%;
-  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  
+  /* disable highlighting */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .text {

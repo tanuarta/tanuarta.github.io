@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
 import Cursor from './Components/Cursor';
+import Main from './main';
 
 function App() {
   const [mousePos, setMousePos] = useState({
@@ -31,15 +32,13 @@ function App() {
   }, []);
 
   return (<>
-    <Home 
+    <Main 
       setCursorMode={setCursorMode}
     />
     <Cursor
       mousePos={mousePos}
       cursorMode={cursorMode}
     />
-    
-    
     
     <Helmet>
       <script data-goatcounter="https://tanuarta.goatcounter.com/count"

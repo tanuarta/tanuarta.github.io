@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './HamburgerMenu.module.scss'
-import { motion, useAnimationControls } from "framer-motion"
+import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
-
-const HambugerMenu = ({ menuShown }) => {
+const HambugerMenu = ({ menuShown, setCursorMode }) => {
 
   const animations = {
     initial: { opacity: 0, x: 2000},
@@ -16,6 +16,14 @@ const HambugerMenu = ({ menuShown }) => {
     animate: { opacity: 1, y: 0, transition: {delay: 0.5, duration: 0.5}},
     exit: {opacity: 0, y: 70, transition: {duration: 0.5}},
   };
+  
+  const mouseEnter = () => {
+    setCursorMode(true);
+  }
+  
+  const mouseLeave = () => {
+    setCursorMode(false);
+  }
 
   return (<>
     <motion.div 
@@ -26,25 +34,73 @@ const HambugerMenu = ({ menuShown }) => {
       exit='exit'
     >
       <div className={styles.main}>
-        <motion.span 
-          initial='initial'
-          animate={menuShown ? 'animate' : 'exit'}
-          exit='exit'
-          variants={childrenVariant} 
-          className={styles.menuText}
+        <Link to='/'
+          style={{ textDecoration: 'none', display: 'flex', cursor: 'auto' }}
         >
-          Home
-        </motion.span>
+          <motion.span 
+            initial='initial'
+            animate={menuShown ? 'animate' : 'exit'}
+            exit='exit'
+            variants={childrenVariant} 
+            className={styles.menuText}
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            onClick={mouseLeave}
+          >
+            Home
+          </motion.span>
+        </Link>
         
-        <motion.span 
-          initial='initial'
-          animate={menuShown ? 'animate' : 'exit'}
-          exit='exit'
-          variants={childrenVariant} 
-          className={styles.menuText}
+        <Link to='/projects'
+          style={{ textDecoration: 'none', display: 'flex', cursor: 'auto' }}
         >
-          Projects
-        </motion.span>
+          <motion.span 
+            initial='initial'
+            animate={menuShown ? 'animate' : 'exit'}
+            exit='exit'
+            variants={childrenVariant}
+            className={styles.menuText}
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            onClick={mouseLeave}
+          >
+            Projects
+          </motion.span>
+        </Link>
+        
+        <Link to='/blog'
+          style={{ textDecoration: 'none', display: 'flex', cursor: 'auto' }}
+        >
+          <motion.span 
+            initial='initial'
+            animate={menuShown ? 'animate' : 'exit'}
+            exit='exit'
+            variants={childrenVariant}
+            className={styles.menuText}
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            onClick={mouseLeave}
+          >
+            Blog
+          </motion.span>
+        </Link>
+        
+        <Link to='/about'
+          style={{ textDecoration: 'none', display: 'flex', cursor: 'auto' }}
+        >
+          <motion.span 
+            initial='initial'
+            animate={menuShown ? 'animate' : 'exit'}
+            exit='exit'
+            variants={childrenVariant}
+            className={styles.menuText}
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            onClick={mouseLeave}
+          >
+            About
+          </motion.span>
+        </Link>
       </div>
     </motion.div>
   
