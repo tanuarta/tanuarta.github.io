@@ -13,6 +13,7 @@
   filter: invert(1);
   mix-blend-mode: difference;
   transition: scale 0.5s, background-color 0.5s;
+  z-index: 500;
 }
 
 

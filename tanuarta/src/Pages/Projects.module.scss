@@ -1,0 +1,12 @@
+.iframe {
+  width: 515px;
+  height: 315px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+  position: relative;
+}

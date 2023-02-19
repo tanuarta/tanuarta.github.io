@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const HambugerMenu = ({ menuShown, setCursorMode }) => {
 
   const animations = {
-    initial: { opacity: 0, x: 2000},
+    initial: {x: 2000},
     animate: { opacity: 1, x:0, transition: {duration: 0.5}},
-    exit: { opacity: 0, x: 2000, transition: {delay: 0.5, duration: 0.5}},
+    exit: {x: 2000, transition: {delay: 0.5, duration: 0.5}},
   }
   
   const childrenVariant = {
@@ -33,8 +33,7 @@ const HambugerMenu = ({ menuShown, setCursorMode }) => {
       animate={menuShown ? 'animate' : 'exit'}
       exit='exit'
     >
-      <div className={styles.main}>
-        <Link to='/'
+        <Link to='/dd'
           style={{ textDecoration: 'none', display: 'flex', cursor: 'auto' }}
         >
           <motion.span 
@@ -101,7 +100,6 @@ const HambugerMenu = ({ menuShown, setCursorMode }) => {
             About
           </motion.span>
         </Link>
-      </div>
     </motion.div>
   
   </>)

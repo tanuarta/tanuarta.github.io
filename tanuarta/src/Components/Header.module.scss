@@ -2,6 +2,7 @@
 
 .main {
   width: 100%;
+  position: sticky;
 }
 
 .topbox {
@@ -35,6 +36,7 @@
 }
 
 .line1, .line2, .line3 {
+  position: relative;
   width: 45px;
   height: 5px;
   margin: 8px 0;
