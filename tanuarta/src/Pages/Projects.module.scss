@@ -1,12 +1,31 @@
-.iframe {
-  width: 515px;
-  height: 315px;
-}
-
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -99;
   position: relative;
+}
+
+.proj {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  width: 100%;
+} 
+
+.proj iframe {
+  position: absolute;
+  width: 52%;
+  height: 69%;
+  top: 13%;
+  left: 24%;
+  z-index: 1;
+}
+
+.proj img {
+  width: 70%;
+  z-index: -1;
+  object-fit: fill;
+  object-position: -20% 20%;
 }

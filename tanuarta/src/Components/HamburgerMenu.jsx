@@ -33,7 +33,7 @@ const HambugerMenu = ({ menuShown, setCursorMode }) => {
       animate={menuShown ? 'animate' : 'exit'}
       exit='exit'
     >
-        <Link to='/dd'
+        <Link to='/'
           style={{ textDecoration: 'none', display: 'flex', cursor: 'auto' }}
         >
           <motion.span 
