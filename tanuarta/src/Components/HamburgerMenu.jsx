@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const HambugerMenu = ({ menuShown, setCursorMode }) => {
 
   const animations = {
-    initial: {x: 2000},
+    initial: {x: 2000, opacity: 0},
     animate: { opacity: 1, x:0, transition: {duration: 0.5}},
-    exit: {x: 2000, transition: {delay: 0.5, duration: 0.5}},
+    exit: {x: 2000, opacity: 0, transition: {delay: 0.5, duration: 0.5}},
   }
   
   const childrenVariant = {

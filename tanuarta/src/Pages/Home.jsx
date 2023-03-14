@@ -5,14 +5,43 @@ import styles from './Home.module.scss'
 const Home = ({ setCursorMode }) => {
   
   return (<>
-    <Header 
-      setCursorMode={setCursorMode}
-    />
-    
     <div className={styles.main}>
-      <div className={styles.headingBox}>
-        Hi I'm Roan
+      <Header 
+        setCursorMode={setCursorMode}
+      />
+      
+      <div className={styles.box}>
+        <div className={styles.headingBox}>
+          Hi I'm Roan
+        </div>
+        <div className={styles.headingBox}>
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+          Hi I'm Roan <br />
+        </div>
+      
       </div>
+      
+      <div className={styles.box}>
+        <div className={styles.headingBox}>
+          Projects
+        </div>
+      
+      </div>
+
     </div>
   </>)
 }

@@ -1,8 +1,15 @@
 .main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  height: 100vh;
   position: relative;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .proj {
@@ -12,6 +19,7 @@
   align-items: center;
   padding-top: 2%;
   width: 100%;
+  z-index: -1;
 } 
 
 .proj iframe {
@@ -20,12 +28,12 @@
   height: 69%;
   top: 13%;
   left: 24%;
-  z-index: 1;
+  z-index: -2;
 }
 
 .proj img {
   width: 70%;
-  z-index: -1;
   object-fit: fill;
   object-position: -20% 20%;
+  z-index: -3;
 }

@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import HambugerMenu from './HamburgerMenu';
 import styles from './Header.module.scss'
+import { useScrollDirection } from 'react-use-scroll-direction'
 
 const Header = ({ setCursorMode }) =>  {
 
   const [menuShown, setMenuShown] = useState(false);
+  const [sticky, setSticky] = useState(true);
+  
+  let oldScrollY = 0;
+  
+  const isSticky = () => {
+    console.log(oldScrollY)
+    if(window.scrollY > oldScrollY) {
+        setSticky(false);
+    } else {
+        setSticky(true);
+    }
+    oldScrollY = window.scrollY;
+  };
+  
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  }, []);
+  
   
   const mouseEnter = () => {
     setCursorMode(true);
@@ -17,18 +39,28 @@ const Header = ({ setCursorMode }) =>  {
   
   
   const hamBurgerToggle = () => {
+    
+    if (menuShown) {
+      console.log(menuShown)
+      document.body.style.overflow = 'unset';
+    }
+    else {
+      document.body.style.overflow = 'hidden';
+    }
     setMenuShown(!menuShown)
   }
 
   return (
-  <div>
+  <div className={`${styles.main} ${sticky ? '' : styles.headerChange}`}>
     <HambugerMenu 
       menuShown={menuShown}
       setCursorMode={setCursorMode}
     />
     
     <div className={styles.topbox}>
-      <div className={styles.text}>tanuarta</div>
+      <div className={styles.textBox}>
+        <span className={styles.text}>tanuarta</span>
+      </div>
       
       <div 
         className={`${styles.burger} ${menuShown ? styles.change : ''}`} 

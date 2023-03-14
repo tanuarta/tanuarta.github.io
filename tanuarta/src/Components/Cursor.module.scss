@@ -3,7 +3,7 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
 
 .change .outer {
   scale: 30%;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;

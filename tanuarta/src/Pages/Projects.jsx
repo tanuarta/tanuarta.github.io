@@ -11,14 +11,16 @@ const Projects = ({ setCursorMode }) => {
   }
   
   return (<>
-    <Header 
-      setCursorMode={setCursorMode}
-    />
-    
     <div className={styles.main}>
-      <div className={styles.proj}>
-        <img src={laptop} />
-        <iframe src='https://riemiee.github.io' />
+      <Header 
+        setCursorMode={setCursorMode}
+      />
+    
+      <div className={styles.box}>
+        <div className={styles.proj}>
+          <img src={laptop} />
+          <iframe src='https://riemiee.github.io' />
+        </div>
       </div>
     </div>
   </>)

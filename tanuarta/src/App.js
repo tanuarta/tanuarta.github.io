@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.scss';
-import Home from './Pages/Home';
 import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
 import Cursor from './Components/Cursor';
 import Main from './main';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   const [mousePos, setMousePos] = useState({
@@ -31,7 +30,8 @@ function App() {
   
   }, []);
 
-  return (<>
+  return (
+  <ParallaxProvider>
     <Main 
       setCursorMode={setCursorMode}
     />
@@ -44,7 +44,8 @@ function App() {
       <script data-goatcounter="https://tanuarta.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     </Helmet>
-  </>);
+  </ParallaxProvider>
+  );
 }
 
 export default App;
