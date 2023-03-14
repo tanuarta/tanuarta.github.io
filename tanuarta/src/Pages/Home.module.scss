@@ -1,19 +1,63 @@
+@import '../Util/variables.scss';
+
 .main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
 }
 
-.box {
+.box1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 90vh;
+  z-index: -2;
 }
 
-.headingBox {
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: -2;
+}
+
+.marq {
   font-family: 'Inter';
-  font-size: 5vw;
-  color: #0081f3;
+  font-size: 3vw;
+  font-weight: 700;
+  color: $text-color;
+  padding-left: 100px;
+}
+
+.descriptive {
+  width: 100%;
+  background-color: $background-color;
+  z-index: -1;
+}
+
+.name1 {
+  font-family: 'Inter';
+  font-size: 10vw;
+  font-weight: 700;
+  color: $text-color;
+  padding-right: 3em;
+}
+
+.name2 {
+  font-family: 'Inter';
+  font-size: 10vw;
+  font-weight: 700;
+  color: $sptext-color;
+  padding-left: 2em;
+}
+
+.proj {
+  font-family: 'Inter';
+  font-size: 10vw;
+  font-weight: 700;
+  color: $text-color;
+  padding-right: 5em;
 }

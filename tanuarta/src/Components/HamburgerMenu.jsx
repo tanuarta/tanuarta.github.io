@@ -22,6 +22,7 @@ const HambugerMenu = ({ menuShown, setCursorMode }) => {
   }
   
   const mouseLeave = () => {
+    document.body.style.overflow = 'unset';
     setCursorMode(false);
   }
 

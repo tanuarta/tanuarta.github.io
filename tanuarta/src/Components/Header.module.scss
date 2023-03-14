@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import '../Util/variables.scss';
 
 .main {
   position: sticky;
@@ -13,7 +14,7 @@
 }
 
 .textBox {
-  background-color: #c2c2c2;
+  background-color: $background-color;
   display: flex;
 }
 
@@ -23,6 +24,7 @@
   margin-left: 1.5%;
   margin-right: 1.5%;
   align-items: center;
+  padding-top: 1%;
 }
 
 .text {
@@ -30,7 +32,7 @@
   font-weight: 900;
   font-family: 'Inter';
   //text-shadow: 0px 40px 30px #C2C2C2;
-  color: white;
+  color: $background-color;
   mix-blend-mode: difference;
   z-index: 99;
   
@@ -52,7 +54,7 @@
   width: 45px;
   height: 5px;
   margin: 8px 0;
-  background-color: black;
+  background-color: #222831;
   transition: 0.4s;
   z-index: 99;
 }
@@ -68,7 +70,7 @@
 
 .change .line1 {
   transform: translate(0, 13px) rotate(-45deg);
-  background-color: white;
+  background-color: $background-color;
 }
 
 .change .line2 {
@@ -77,5 +79,5 @@
 
 .change .line3 {
   transform: translate(0, -13px) rotate(45deg);
-  background-color: white;
+  background-color: $background-color;
 }

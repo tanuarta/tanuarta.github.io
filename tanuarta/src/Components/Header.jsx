@@ -39,7 +39,6 @@ const Header = ({ setCursorMode }) =>  {
   
   
   const hamBurgerToggle = () => {
-    
     if (menuShown) {
       console.log(menuShown)
       document.body.style.overflow = 'unset';
@@ -59,7 +58,7 @@ const Header = ({ setCursorMode }) =>  {
     
     <div className={styles.topbox}>
       <div className={styles.textBox}>
-        <span className={styles.text}>tanuarta</span>
+        
       </div>
       
       <div 
