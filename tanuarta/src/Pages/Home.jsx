@@ -5,7 +5,9 @@ import Marquee from "react-fast-marquee";
 import { useParallax } from 'react-scroll-parallax';
 
 const Home = ({ setCursorMode }) => { 
-  const { ref } = useParallax({ speed: 40 });
+  const { ref: projectRef } = useParallax({ speed: 40 });
+  const { ref: rightRef } = useParallax({ speed: 100, translateX:['0', '65'], translateY:['0', '0']});
+  const { ref: leftRef } = useParallax({ speed: 100, translateX:['0', '-100'], translateY:['0', '0']});
   
   useEffect(() => {
     
@@ -19,11 +21,11 @@ const Home = ({ setCursorMode }) => {
       />
       
       <div className={styles.box1}>
-        <div className={styles.name1}>
+        <div ref={leftRef} className={`${styles.name1} ${styles.noHighlight}`}>
           Roan
         </div>
         
-        <Marquee className={styles.descriptive} gradient={false} speed={60}>
+        <Marquee className={`${styles.descriptive} ${styles.noHighlight}`} gradient={false} speed={60}>
           <span className={styles.marq}>Developer</span>
           <span className={styles.marq}>·</span>
           <span className={styles.marq}>Musician</span>
@@ -38,7 +40,7 @@ const Home = ({ setCursorMode }) => {
           <span className={styles.marq}>·</span>
         </Marquee>
         
-        <div className={styles.name2}>
+        <div ref={rightRef} className={`${styles.name2} ${styles.noHighlight}`}>
           Tanuarta
         </div>
       </div>
@@ -46,7 +48,7 @@ const Home = ({ setCursorMode }) => {
       
       
       <div className={styles.box2}>
-        <div ref={ref} className={styles.proj}>
+        <div ref={projectRef} className={styles.proj}>
           Projects
         </div>
       

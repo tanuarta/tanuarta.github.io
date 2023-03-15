@@ -2,12 +2,22 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import HambugerMenu from './HamburgerMenu';
 import styles from './Header.module.scss'
-import { useScrollDirection } from 'react-use-scroll-direction'
 
 const Header = ({ setCursorMode }) =>  {
 
   const [menuShown, setMenuShown] = useState(false);
   const [sticky, setSticky] = useState(true);
+  const [tanStyle, setTanStyle] = useState('');
+  
+  useEffect(() => {
+    if (!menuShown) { 
+      let timeout = setTimeout(() => setTanStyle(''), 600);
+      return () => clearTimeout(timeout);
+    } else {
+      let timeout = setTimeout(() => setTanStyle(styles.vis), 390);
+      return () => clearTimeout(timeout);
+    }
+  }, [menuShown]);
   
   let oldScrollY = 0;
   
@@ -57,8 +67,8 @@ const Header = ({ setCursorMode }) =>  {
     />
     
     <div className={styles.topbox}>
-      <div className={styles.textBox}>
-        
+      <div className={`${styles.textBox}`}>
+        <span className={`${styles.text} ${tanStyle} ${styles.noHighlight}`}>tanuarta</span>
       </div>
       
       <div 

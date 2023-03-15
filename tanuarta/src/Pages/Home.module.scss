@@ -1,4 +1,5 @@
 @import '../Util/variables.scss';
+@import '../Util/selectors.scss';
 
 .main {
   display: flex;
@@ -11,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 80vh;
   z-index: -2;
 }
 
@@ -43,7 +44,6 @@
   font-size: 10vw;
   font-weight: 700;
   color: $text-color;
-  padding-right: 3em;
 }
 
 .name2 {
@@ -51,7 +51,6 @@
   font-size: 10vw;
   font-weight: 700;
   color: $sptext-color;
-  padding-left: 2em;
 }
 
 .proj {
