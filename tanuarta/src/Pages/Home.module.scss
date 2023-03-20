@@ -18,7 +18,7 @@
 
 .box2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -58,5 +58,23 @@
   font-size: 10vw;
   font-weight: 700;
   color: $text-color;
-  padding-right: 5em;
+  padding-right: 0.3em;
+}
+
+.projectBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding-left: 0.3em;
+}
+
+.project {
+  width: 100%;
+}
+
+.projectImg {
+  object-fit: contain;
+  width: 100%;
 }

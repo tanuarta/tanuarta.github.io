@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import styles from './Home.module.scss'
 import Marquee from "react-fast-marquee";
 import { useParallax } from 'react-scroll-parallax';
+import riemiee from '../Media/riemiee.PNG'
 
 const Home = ({ setCursorMode }) => { 
   const { ref: projectRef } = useParallax({ speed: 40 });
@@ -47,9 +48,15 @@ const Home = ({ setCursorMode }) => {
       
       
       
-      <div className={styles.box2}>
-        <div ref={projectRef} className={styles.proj}>
+      <div ref={projectRef} className={styles.box2}>
+        <div className={styles.proj}>
           Projects
+        </div>
+        
+        <div className={styles.projectBox}>
+          <div className={styles.project}>
+            <img className={styles.projectImg} src={riemiee} />
+          </div>
         </div>
       
       </div>
