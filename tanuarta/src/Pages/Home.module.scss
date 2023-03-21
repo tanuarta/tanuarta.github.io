@@ -13,16 +13,16 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  z-index: -2;
 }
 
 .box2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
-  z-index: -2;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .marq {
@@ -36,7 +36,6 @@
 .descriptive {
   width: 100%;
   background-color: $background-color;
-  z-index: -1;
 }
 
 .name1 {
@@ -53,21 +52,31 @@
   color: $sptext-color;
 }
 
-.proj {
+.projName {
   font-family: 'Inter';
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: 700;
   color: $text-color;
   padding-right: 0.3em;
 }
 
-.projectBox {
+.riemieeBox {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
   height: 100%;
   padding-left: 0.3em;
+  background-image: url('../Media/riemiee.PNG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transition: 2s;
+}
+
+.riemieeBox .riemieeHover {
+  background-color: black;
+  opacity: .5;
 }
 
 .project {
