@@ -14,10 +14,12 @@ const Home = ({ setCursorMode }) => {
   
   const mouseEnter = () => {
     console.log('enter')
+    setCursorMode(true)
     setEnterRiemiee(true);
   }
   
   const mouseLeave = () => {
+    setCursorMode(false)
     setEnterRiemiee(false);
   }
   
@@ -60,11 +62,14 @@ const Home = ({ setCursorMode }) => {
         </div>
         
         <div 
-          className={`${styles.riemieeBox} ${enterRiemiee ? styles.riemieeHover : ''}`} 
+          className={`${styles.riemieeBox}`} 
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
         >
-        
+          <div className={`${styles.riemieeModal} ${enterRiemiee ? styles.riemieeHover : ''}`}>
+            Over
+          </div>
+          <img src={riemiee} className={styles.riemieePic}></img>
         </div>
       
       </div>
