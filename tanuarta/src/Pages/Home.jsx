@@ -4,24 +4,13 @@ import styles from './Home.module.scss'
 import Marquee from "react-fast-marquee";
 import { ParallaxBanner, useParallax } from 'react-scroll-parallax';
 import riemiee from '../Media/riemiee.PNG'
+import riemieePrev from '../Media/riemieePrev.png'
+import ProjectBox from '../Components/ProjectBox';
 
 const Home = ({ setCursorMode }) => { 
   const { ref: projectRef } = useParallax({ speed: 40 });
   const { ref: rightRef } = useParallax({ speed: 100, translateX:['0', '65'], translateY:['0', '0']});
   const { ref: leftRef } = useParallax({ speed: 100, translateX:['0', '-100'], translateY:['0', '0']});
-  
-  const [enterRiemiee, setEnterRiemiee] = useState(false)
-  
-  const mouseEnter = () => {
-    console.log('enter')
-    setCursorMode(true)
-    setEnterRiemiee(true);
-  }
-  
-  const mouseLeave = () => {
-    setCursorMode(false)
-    setEnterRiemiee(false);
-  }
   
   return (<>
     <div className={styles.main}>
@@ -57,20 +46,16 @@ const Home = ({ setCursorMode }) => {
       
       
       <div ref={projectRef} className={styles.box2}>
-        <div className={styles.projName}>
+        <div className={styles.projTitle}>
           Projects
         </div>
         
-        <div 
-          className={`${styles.riemieeBox}`} 
-          onMouseEnter={mouseEnter}
-          onMouseLeave={mouseLeave}
-        >
-          <div className={`${styles.riemieeModal} ${enterRiemiee ? styles.riemieeHover : ''}`}>
-            Over
-          </div>
-          <img src={riemiee} className={styles.riemieePic}></img>
-        </div>
+        <ProjectBox
+          link='https://riemiee.github.io'
+          setCursorMode={setCursorMode}
+          image={riemiee}
+          preview={riemieePrev}
+        />
       
       </div>
 
