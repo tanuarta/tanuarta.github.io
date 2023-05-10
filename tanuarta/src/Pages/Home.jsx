@@ -6,6 +6,7 @@ import { ParallaxBanner, useParallax } from 'react-scroll-parallax';
 import riemiee from '../Media/riemiee.PNG'
 import riemieePrev from '../Media/riemieePrev.jpg'
 import ProjectBox from '../Components/ProjectBox';
+import Background from '../Components/Background';
 
 const Home = ({ setCursorMode }) => { 
   const { ref: projectRef } = useParallax({ speed: 40 });
@@ -17,6 +18,7 @@ const Home = ({ setCursorMode }) => {
       <Header 
         setCursorMode={setCursorMode}
       />
+      <Background />
       
       <div className={styles.box1}>
         <div ref={leftRef} className={`${styles.name1} ${styles.noHighlight}`}>
@@ -50,13 +52,28 @@ const Home = ({ setCursorMode }) => {
           Projects
         </div>
         
-        <ProjectBox
-          link='https://riemiee.github.io'
-          setCursorMode={setCursorMode}
-          image={riemiee}
-          preview={riemieePrev}
-        />
-      
+        <div className={styles.projects}>
+          <ProjectBox
+            link='https://riemiee.github.io'
+            setCursorMode={setCursorMode}
+            image={riemiee}
+            preview={riemieePrev}
+          />
+
+          <ProjectBox
+            link='https://riemiee.github.io'
+            setCursorMode={setCursorMode}
+            image={riemiee}
+            preview={riemieePrev}
+          />
+
+          <ProjectBox
+            link='https://riemiee.github.io'
+            setCursorMode={setCursorMode}
+            image={riemiee}
+            preview={riemieePrev}
+          />
+          </div>
       </div>
 
     </div>
