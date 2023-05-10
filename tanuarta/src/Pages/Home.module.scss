@@ -26,7 +26,7 @@
 }
 
 .marq {
-  font-family: 'Inter';
+  font-family: $second-font;
   font-size: 3vw;
   font-weight: 700;
   color: $text-color;
@@ -39,21 +39,21 @@
 }
 
 .name1 {
-  font-family: 'Inter';
+  font-family: $main-font;
   font-size: 10vw;
   font-weight: 700;
   color: $text-color;
 }
 
 .name2 {
-  font-family: 'Inter';
+  font-family: $main-font;
   font-size: 10vw;
   font-weight: 700;
   color: $sptext-color;
 }
 
 .projTitle {
-  font-family: 'Inter';
+  font-family: $main-font;
   font-size: 8vw;
   font-weight: 700;
   color: $text-color;
@@ -93,7 +93,7 @@
 }
 
 .projName {
-  font-family: 'Inter';
+  font-family: $main-font;
   font-size: 3vw;
   font-weight: 700;
   color: $sptext-color;

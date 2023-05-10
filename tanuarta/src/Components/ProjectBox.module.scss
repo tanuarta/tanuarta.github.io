@@ -34,12 +34,33 @@
   padding: 1.5em;
 }
 
+.projMainBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
 .projName {
-  font-family: 'Inter';
+  font-family: $main-font;
   font-size: 3vw;
   font-weight: 500;
   color: $sptext-color;
-  padding-right: 0.3em;
+}
+
+.projDesc {
+  font-family: $second-font;
+  font-size: 2vw;
+  font-weight: 500;
+  color: $sptext-color;
+}
+
+.projTextBox {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: .7em;
+  align-items: flex-end;
 }
 
 .riemieeHover {
@@ -53,5 +74,4 @@
   object-fit: cover;
   border-radius: 10%;
   opacity: 1;
-  margin-top: 2em;
 }

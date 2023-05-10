@@ -49,9 +49,16 @@ const ProjectBox = ({ setCursorMode, link, image, preview }) => {
           initial='initial'
           animate={startAnimation ? 'animate' : 'exit'}
           exit='exit'
-          variants={textAnimation} 
+          variants={textAnimation}
+          className={styles.projMainBox}
         >
-          <span className={styles.projName}>riemiee.github.io</span>
+          <div
+            className={styles.projTextBox}
+          >
+            <span className={styles.projName}>Riemiee</span>
+            <span className={styles.projDesc}>Art Portfolio</span>
+          </div>
+          
           <motion.img 
             className={styles.mainImg} 
             src={image}

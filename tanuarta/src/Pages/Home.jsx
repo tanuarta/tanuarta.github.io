@@ -4,7 +4,7 @@ import styles from './Home.module.scss'
 import Marquee from "react-fast-marquee";
 import { ParallaxBanner, useParallax } from 'react-scroll-parallax';
 import riemiee from '../Media/riemiee.PNG'
-import riemieePrev from '../Media/riemieePrev.png'
+import riemieePrev from '../Media/riemieePrev.jpg'
 import ProjectBox from '../Components/ProjectBox';
 
 const Home = ({ setCursorMode }) => { 
