@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header';
 import styles from './Projects.module.scss'
-import laptop from '../Media/laptop.png'
+import { Link } from "react-router-dom";
 
 const Projects = ({ setCursorMode }) => {
   
@@ -18,8 +18,9 @@ const Projects = ({ setCursorMode }) => {
     
       <div className={styles.box}>
         <div className={styles.proj}>
-          <img src={laptop} />
-          <iframe src='https://riemiee.github.io' />
+          <Link to='/tictactoe'>
+            TicTacToe
+          </Link>
         </div>
       </div>
     </div>

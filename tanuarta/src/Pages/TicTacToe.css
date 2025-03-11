@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  margin: 3%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 30%;
+}
+
+.box {
+  display: flex;
+  border: 1px black solid;
+  aspect-ratio: 1;
+  flex: 30%;
+  font-size: 4vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 3vw;
+  margin-bottom: 2%;
+}
+
+.turn-text {
+  font-size: 1.6vw;
+  margin-bottom: 2%;
+
+}
+
+.to-go {
+  color:rgba(0, 0, 0, 0.5);
+}
+
+.reset-button {
+  margin-top: 5%;
+
+}
