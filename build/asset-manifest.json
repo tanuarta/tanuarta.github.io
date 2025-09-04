@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf178635.css",
+    "main.js": "/static/js/main.ced8e36c.js",
+    "static/js/453.4c4eacde.chunk.js": "/static/js/453.4c4eacde.chunk.js",
+    "static/media/riemiee.PNG": "/static/media/riemiee.98233f762f9f1d468322.PNG",
+    "static/media/riemieePrev.jpg": "/static/media/riemieePrev.6a40aafc3ac3bba5a3ed.jpg",
+    "index.html": "/index.html",
+    "main.bf178635.css.map": "/static/css/main.bf178635.css.map",
+    "main.ced8e36c.js.map": "/static/js/main.ced8e36c.js.map",
+    "453.4c4eacde.chunk.js.map": "/static/js/453.4c4eacde.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf178635.css",
+    "static/js/main.ced8e36c.js"
+  ]
+}
