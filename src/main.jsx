@@ -18,7 +18,6 @@ const Main = ({ setCursorMode }) => {
       <Route path="/tictactoe" element={<TicTacToe setCursorMode={setCursorMode} />} />
       <Route path="/funeralbooklet" element={pdf} target="_blank" rel="noopener noreferrer" download />
       <Route path="*" element={<Unknown setCursorMode={setCursorMode} />} />
-      
     </Routes>
   );
 }
